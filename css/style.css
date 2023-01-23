@@ -1,0 +1,614 @@
+:root {
+    --navbar-bg-color: #151819;
+    --white-color: #ffffff;
+    --bg-color: #000000;
+    --text-color: #91A3AD;
+    --text-color2: #616D72;
+    --pink-color: #ED145B;
+
+}
+
+@font-face {
+    font-family: 'Gotham HTF';
+    src: url(../fonts/GothamHTF-Medium.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+    font-family: 'Gotham HTF light';
+    src: url(../fonts/GothamHTF-Book.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+    font-family: 'Gotham HTF bold';
+    src: url(../fonts/GothamHTF-Bold.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+
+}
+
+/* SCROLL BAR  */
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: #810d33;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ED145B;
+    border-radius: 50px;
+}
+
+/* FIM SCROLL BAR  */
+
+
+* {
+    font-family: 'Gotham HTF', sans-serif;
+
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* nav bar  */
+
+header {
+    background: url(../img/header.png);
+    background-color: var(--bg-color);
+    background-repeat: no-repeat;
+}
+
+main {
+    background-color: var(--bg-color);
+}
+
+
+
+p {
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+/* NAVBAR  */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    height: 90px;
+    background-color: var(--navbar-bg-color);
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.nav-itens {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 3em;
+}
+
+.nav-link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 15px;
+    margin-right: 8em;
+    transition: 0.5s;
+    font-family: 'Gotham HTF bold', sans-serif;
+
+}
+
+.nav-link:hover {
+    color: var(--pink-color);
+}
+
+.btn-nav {
+    padding: 15px 30px;
+    background-color: var(--pink-color);
+    font-size: 12px;
+    font-family: 'Gotham HTF bold', sans-serif;
+    color: var(--white-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-nav:hover {
+    box-shadow: 0px 0px 30px 0px var(--pink-color);
+}
+
+/* FIM NAVBAR  */
+
+.header {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10em;
+}
+
+.titulo-header {
+    font-family: 'Gotham HTF bold', sans-serif;
+    font-size: 60px;
+    color: var(--text-color);
+    line-height: 70px;
+}
+
+.subtitulo-header {
+    color: var(--text-color);
+    font-size: 40px;
+    font-weight: lighter;
+    font-family: 'Gotham HTF light', sans-serif;
+    margin-bottom: 3em;
+    line-height: 50px;
+
+}
+
+.coluna {
+    align-items: center;
+    text-align: center;
+    margin-top: 18em;
+    margin-bottom: 18em;
+}
+
+.btn-header {
+    padding: 15px 50px;
+    border: 1px solid var(--pink-color);
+    font-size: 12px;
+    font-family: 'Gotham HTF bold', sans-serif;
+    color: var(--pink-color);
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.btn-header:hover {
+    background-color: var(--pink-color);
+    color: var(--white-color);
+}
+
+.container-header {
+    display: inline;
+    text-align: center;
+}
+
+
+.btn-scroll {
+    color: var(--text-color);
+    font-size: 14px;
+    text-decoration: none;
+    z-index: 0;
+}
+
+.btn-scroll-line {
+    background-color: transparent;
+    border: 1px solid var(--pink-color);
+    border-top: 0;
+    border-left: 0;
+    display: block;
+    height: 35px;
+    width: 35px;
+    margin: 10px auto 0;
+    transform: rotate(45deg);
+    font-size: 12px;
+    text-decoration: inherit;
+    box-sizing: inherit;
+    z-index: -1000;
+}
+
+/* CURSO  */
+
+.curso {
+    background-color: var(--bg-color);
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.container {
+    height: 510px;
+    width: 1170px;
+    margin-top: 5vw;
+
+}
+
+.titulo-curso {
+    font-size: 50px;
+    color: var(--text-color);
+    font-weight: lighter;
+    font-family: 'Gotham HTF light', sans-serif;
+    margin-bottom: 1em;
+    line-height: 50px;
+}
+
+.conteudo-curso {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-text {
+    font-family: 'Gotham HTF bold', sans-serif;
+    color: var(--pink-color);
+    text-decoration: none;
+    font-size: 15px;
+
+}
+
+.subtitulo-curso {
+    margin: 2em 0 2em 1em;
+}
+
+.box1 {
+    width: 40%;
+    margin-top: 3em;
+    border-right: 1px solid var(--text-color2);
+    padding-right: 7.3em;
+}
+
+.box2 {
+    width: 40%;
+    margin-top: 3em;
+
+}
+
+.texto-curso {
+    color: var(--text-color2);
+    margin-bottom: 3em;
+    font-family: 'Roboto', sans-serif;
+    line-height: 30px;
+}
+
+.line {
+    background-color: transparent;
+    border: 1px solid var(--text-color2);
+    display: block;
+    width: 3vw;
+    height: 0;
+    margin: 1em 2em;
+    font-size: 12px;
+
+}
+
+.line2 {
+    background-color: transparent;
+    border: 1px solid var(--text-color2);
+    display: block;
+    width: 6vw;
+    height: 0;
+    margin: 1em 2em;
+    font-size: 12px;
+
+}
+
+.flex {
+    display: flex;
+
+}
+
+/* MATRIZ CURRICULAR  */
+
+.matrizCurricular {
+    background-color: var(--bg-color);
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-matriz {
+    color: var(--text-color);
+    font-family: 'Gotham HTF bold', sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 2em;
+}
+
+.container-matriz {
+    height: 510px;
+    width: 1170px;
+    margin-top: 5vw;
+
+}
+
+.line3 {
+    background-color: transparent;
+    border: 1px solid var(--text-color2);
+    display: block;
+    height: 0px;
+    width: 73.00685119628906px;
+    border-radius: nullpx;
+    margin: 1.5em 2em 0 7.8em;
+    font-size: 12px;
+}
+
+.subtitulo-matriz {
+    color: var(--text-color2);
+    font-family: 'Gotham HTF light', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 4em;
+
+}
+
+/* ACCORDION  */
+
+.accordion {
+    border: 1px solid var(--text-color);
+    padding: 30px 20px;
+    margin-bottom: 2em;
+}
+
+.accordion:hover {
+    border: var(--pink-color) 1px solid;
+}
+
+.accordion_header {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo-accordion {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: 0.05em;
+}
+
+.accordion_conteudo {
+    margin-left: 50px;
+    margin-right: 15px;
+    overflow: hidden;
+    height: 0;
+    transition: all .5s ease;
+    font-size: 14px;
+}
+
+.active {
+    padding-bottom: 10px;
+}
+
+.icon {
+    color: var(--pink-color);
+    font-size: 30px;
+    border-radius: 50px;
+}
+
+.texto-accordion {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color2);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+/* FIM ACCORDION  */
+
+/* TURMAS  */
+
+.turmas {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-turmas {
+    width: 960px;
+    height: 478px;
+    margin-top: 4vw;
+
+}
+
+.titulo-turmas {
+    color: var(--text-color);
+    font-family: 'Gotham HTF bold', sans-serif;
+    font-style: normal;
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.line4 {
+    background-color: transparent;
+    border: 2px solid var(--pink-color);
+    display: block;
+    height: 0px;
+    width: 40px;
+    border-radius: nullpx;
+    font-size: 12px;
+    margin-left: 46.5%;
+    margin-bottom: 50px;
+}
+
+/* TABLE  */
+
+table {
+    width: 960px;
+    height: 216px;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px var(--text-color2) solid;
+    color: var(--text-color);
+    text-align: center;
+    vertical-align: middle;
+    padding: 30px;
+
+}
+
+.table-title {
+    font-family: 'Gotham HTF bold', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.table-text {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: var(--text-color2);
+}
+
+/* FIM TABLE  */
+
+.info-valor {
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    color: var(--text-color2);
+    margin: 1em 0 6em;
+}
+
+
+#btn-turmas {
+    margin-left: 40%;
+
+}
+
+@media screen and (max-width : 500px) {
+
+    html {
+        width: 100%;
+        background-color: var(--bg-color);
+    }
+
+    /* navbar */
+
+    nav {
+        height: 180px;
+        display: inline-block;
+        width: 100%;
+        position: relative;
+    }
+
+    .header {
+        height: 800px;
+        width: 100%;
+    }
+
+    .subtitulo-header {
+        font-size: 20px;
+    }
+
+    .logo {
+        margin: 20px 30px;
+        width: 30vw;
+    }
+
+
+    .btn-nav,
+    .nav-itens {
+        display: block;
+
+    }
+
+    nav li {
+        margin-bottom: 10px;
+    }
+
+    .nav-link{
+        font-size: 12px;
+    }
+
+    /* curso  */
+
+    .curso {
+        width: auto;
+        height: 2000px;
+    }
+
+    .box1 {
+        width: auto;
+        text-align: left;
+        margin-left: 20vw;
+        border-right: 0;
+    }
+
+    .box2 {
+        width: 70%;
+        margin: auto;
+        text-align: left;
+    }
+
+    .conteudo-curso {
+        display: block;
+    }
+
+    .container {
+        width: auto;
+        text-align: center;
+    }
+
+    /* matriz curricular  */
+
+    .matrizCurricular {
+        width: auto;
+        height: 1500px;
+    }
+
+    .container-matriz {
+        width: 80%;
+        text-align: left;
+    }
+
+    .titulo-matriz,
+    .subtitulo-matriz {
+        margin: auto;
+        font-size: 20px;
+    }
+
+    /* turmas  */
+
+    .turmas,
+    .container-turmas {
+        width: 100%;
+    }
+
+    .container-table {
+        align-items: center;
+        margin: auto;
+        width: 90vw;
+        overflow-x: auto;
+    }
+
+
+    .accordion {
+        padding: 10px 20px;
+    }
+
+    #btn-turmas{
+        margin-left: 28vw;
+    }
+}
